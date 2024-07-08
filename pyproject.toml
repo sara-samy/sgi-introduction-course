@@ -1,0 +1,21 @@
+[tool.poetry]
+name = "sgi-introduction-course"
+version = "0.1.0"
+description = ""
+authors = ["SGI 2024"]
+readme = "README.md"
+packages = [ {include = "utils"} ]
+
+[tool.poetry.dependencies]
+python = "^3.10"
+numpy = "1.26.4"
+scipy = "1.13.1"
+gpytoolbox = "0.2.0"
+polyscope = "2.2.1"
+ptpython = "^3.0.27"
+black = "^24.4.2"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
