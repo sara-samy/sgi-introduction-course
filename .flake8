@@ -1,0 +1,26 @@
+[flake8]
+max-line-length = 120
+exclude =
+    .venv,
+    .git,
+    dist,
+    __pycache__
+extend-ignore =
+    # too many leading '#' for block comment
+    E266
+    # block comment should start with '# '
+    E265
+    # module imported but unused
+    F401
+    # whitespace before ‘,’, ‘;’, or ‘:’
+    E203
+    # comparison to True should be ‘if cond is True:’ or ‘if cond:’
+    E712
+    # do not use bare except, specify exception instead
+    E722
+    # do not assign a lambda expression, use a def
+    E731
+    # redefinition of unused 'variable_name' from line N
+    F811
+    # local variable 'variable_name' is assigned to but never used
+    F841
