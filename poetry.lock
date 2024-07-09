@@ -1140,6 +1140,46 @@ lint = ["pre-commit (==3.7.0)"]
 test = ["pytest (>=7.4)", "pytest-cov (>=4.1)"]
 
 [[package]]
+name = "libigl"
+version = "2.5.1"
+description = "libigl Python Bindings"
+optional = false
+python-versions = "*"
+files = [
+    {file = "libigl-2.5.1-cp310-cp310-macosx_10_13_x86_64.whl", hash = "sha256:515288afb92b6e5b0474ca24069578c85d432d3518e830a799d6832e470f289d"},
+    {file = "libigl-2.5.1-cp310-cp310-macosx_11_0_arm64.whl", hash = "sha256:ea7d23fbdce5effe611fe8ee840135ab83cad5f8e2ce60956f147c5ad2b5cea9"},
+    {file = "libigl-2.5.1-cp310-cp310-manylinux_2_17_x86_64.manylinux2014_x86_64.whl", hash = "sha256:95a579e227c14a97986d162c86528404f8db97cf64621bc339bec9817601740f"},
+    {file = "libigl-2.5.1-cp310-cp310-win_amd64.whl", hash = "sha256:6e2b952d89b8a14b3e2d7696fa7cbea0e6c5caff8671519275112b46e8191f4a"},
+    {file = "libigl-2.5.1-cp311-cp311-macosx_10_13_x86_64.whl", hash = "sha256:a97d75ae97115555c3b346b45edcd0049fb09f60487c29036d35bc8a17a8414c"},
+    {file = "libigl-2.5.1-cp311-cp311-macosx_11_0_arm64.whl", hash = "sha256:8ce6058b3b12031e402b60bf375f6725bf639210f6efe06caeec0dacc65bd6ca"},
+    {file = "libigl-2.5.1-cp311-cp311-manylinux_2_17_x86_64.manylinux2014_x86_64.whl", hash = "sha256:e949a145fa1d1913ed3d325032c9e7d6a20486be393a2dfbfe68f97015f5762b"},
+    {file = "libigl-2.5.1-cp311-cp311-win_amd64.whl", hash = "sha256:d681810b272b603b1581104385d810926623474e755381fda6b2f79c495067d4"},
+    {file = "libigl-2.5.1-cp312-cp312-macosx_10_13_x86_64.whl", hash = "sha256:39497f3c464e7739b20f5f9693226db467a5b41371a7fb6523abc78157edca5a"},
+    {file = "libigl-2.5.1-cp312-cp312-macosx_11_0_arm64.whl", hash = "sha256:173fc975fa74896e8275605a2e3c0e8f98c01670ae01774b81276d6933654d61"},
+    {file = "libigl-2.5.1-cp312-cp312-manylinux_2_17_x86_64.manylinux2014_x86_64.whl", hash = "sha256:8b4122669cf5d80a304d089cf094ce1c78cfd09cc5426347fad9961d80310045"},
+    {file = "libigl-2.5.1-cp312-cp312-win_amd64.whl", hash = "sha256:dfff324ca17d8785b97ec5539eb4de41afba6b49e2db859b309d47c894991124"},
+    {file = "libigl-2.5.1-cp36-cp36m-macosx_10_13_x86_64.whl", hash = "sha256:698117d5db3b1e21d6dbb41f28bfc086826b2e21f170c22eabb055c08747d005"},
+    {file = "libigl-2.5.1-cp36-cp36m-manylinux_2_17_x86_64.manylinux2014_x86_64.whl", hash = "sha256:2275ebfa5997750274ff8cf1292363d4ace9c2d8fc853bf7df84c5b09b19bec3"},
+    {file = "libigl-2.5.1-cp36-cp36m-win_amd64.whl", hash = "sha256:1fbeb52abfa2a3730fe62fab9654c847d86f0e6511b4e8ecb8e324e6a7710758"},
+    {file = "libigl-2.5.1-cp37-cp37m-macosx_10_13_x86_64.whl", hash = "sha256:c378e2b28e7bd6b4c373b7e898cc7e44fa10d088a88d459a7635eedc45eb6afe"},
+    {file = "libigl-2.5.1-cp37-cp37m-manylinux_2_17_x86_64.manylinux2014_x86_64.whl", hash = "sha256:d4065a76a6641c9ee8cbc661dae5626ee27e0e1d9d6e34e00fbcf982c60f0efa"},
+    {file = "libigl-2.5.1-cp37-cp37m-win_amd64.whl", hash = "sha256:742e9118ff86991fdaca5131318ef4f498569f92eada94797b59e5e9d905500c"},
+    {file = "libigl-2.5.1-cp38-cp38-macosx_10_13_x86_64.whl", hash = "sha256:ea73b76b509842437a6814a14b87a2bf3a6c352c43346519d32d12777cfa2d7a"},
+    {file = "libigl-2.5.1-cp38-cp38-macosx_11_0_arm64.whl", hash = "sha256:35f94beed191fe8955570ec9b85885cdfdd806e7b5229c2dd1e037367d77a8aa"},
+    {file = "libigl-2.5.1-cp38-cp38-manylinux_2_17_x86_64.manylinux2014_x86_64.whl", hash = "sha256:e9c92cce0245f4747a2e7a1ed80cc010d142bd8df1672332a92b8faef435b278"},
+    {file = "libigl-2.5.1-cp38-cp38-win_amd64.whl", hash = "sha256:a6ecd1524ba5c2b0c888ce923e5684d41a333f088484a6a4388e5414a571330c"},
+    {file = "libigl-2.5.1-cp39-cp39-macosx_10_13_x86_64.whl", hash = "sha256:dc041ec7d1d58a89eb570b454a0c094a27650fe166983d99b59deaf36c6895b6"},
+    {file = "libigl-2.5.1-cp39-cp39-macosx_11_0_arm64.whl", hash = "sha256:db0d0a4c023e759551a429292c29fcd058974bd10f450fddfeb57a21a40f9ce7"},
+    {file = "libigl-2.5.1-cp39-cp39-manylinux_2_17_x86_64.manylinux2014_x86_64.whl", hash = "sha256:a96aebd278440b164a46b38fa75ac8216142c90a3ea47b4d22b99d5f6648ab05"},
+    {file = "libigl-2.5.1-cp39-cp39-win_amd64.whl", hash = "sha256:e4113af79338f9119828fddd49a6fb0cfeae757793b3a48ea0b49b23ab1d9599"},
+    {file = "libigl-2.5.1.zip", hash = "sha256:b85db781427ba5c9d1586b3c4bfd33b8f0fa225f3a5003dd3cb7c3f998b0be41"},
+]
+
+[package.dependencies]
+numpy = "*"
+scipy = "*"
+
+[[package]]
 name = "markdown-it-py"
 version = "3.0.0"
 description = "Python port of markdown-it. Markdown parsing, done right!"
@@ -2655,4 +2695,4 @@ test = ["websockets"]
 [metadata]
 lock-version = "2.0"
 python-versions = "^3.10"
-content-hash = "c10c3bb698d9ed0bda2a9333aae49567b7551076470a1949c83ae945d3f40ecb"
+content-hash = "b52feecf59fe4f5f27430561c81325502637adb510fa94a2a499e8d935f8b813"

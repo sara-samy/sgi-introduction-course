@@ -16,6 +16,7 @@ ptpython = "^3.0.27"
 black = "^24.4.2"
 notebook = "^7.2.1"
 rich = "^13.7.1"
+libigl = "^2.5.1"
 
 
 [build-system]
